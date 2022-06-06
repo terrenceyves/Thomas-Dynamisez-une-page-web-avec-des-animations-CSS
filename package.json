@@ -1,4 +1,21 @@
 {
+  "name": "dynamisez-une-page-web-avec-des-animations-css",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass --watch ./sass/main.scss:./public/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KayDaaH/Dynamisez-une-page-web-avec-des-animations-CSS.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KayDaaH/Dynamisez-une-page-web-avec-des-animations-CSS/issues"
+  },
+  "homepage": "https://github.com/KayDaaH/Dynamisez-une-page-web-avec-des-animations-CSS#readme",
   "dependencies": {
     "normalize.css": "^8.0.1"
   }
