@@ -1,3 +1,7 @@
-body {
-    background: blue;
+@import "./utils/variables";
+@import "./base/fonts";
+
+header {
+    color: $colour-primary;
+    font-family: "Shrikhand-Regular", sans-serif;
 }

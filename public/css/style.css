@@ -1,5 +1,14 @@
-body {
-  background: blue;
+@font-face {
+  font-family: "Shrikhand-Regular";
+  src: url("/assets/fonts/Shrikhand-Regular.ttf");
+}
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("/assets/fonts/Roboto-Regular.ttf");
+}
+header {
+  color: #9356DC;
+  font-family: "Shrikhand-Regular", sans-serif;
 }
 
 /*# sourceMappingURL=style.css.map */
