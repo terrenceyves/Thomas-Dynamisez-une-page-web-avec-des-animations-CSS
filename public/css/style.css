@@ -17,7 +17,7 @@
   flex-direction: column;
   background-color: #e8e8e8;
 }
-.header__h1 {
+.header h1 {
   display: flex;
   background-color: white;
   font-family: "Shrikhand-Regular", sans-serif;
@@ -27,7 +27,7 @@
   padding: 20px 0px 10px 0px;
   box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.155);
 }
-.header__bloc {
+.header .bloc {
   display: flex;
   flex-direction: column;
   font-size: 20px;
@@ -37,7 +37,7 @@
   padding: 20px 0px 20px 0px;
   background-color: #e8e8e8;
 }
-.header__bloc__center {
+.header .bloc__center {
   display: flex;
   position: relative;
   flex-direction: column;
@@ -45,12 +45,12 @@
   justify-content: center;
   width: 300px;
 }
-.header__bloc__center__icon {
+.header .bloc__center__icon {
   position: absolute;
   left: 40px;
 }
 
-.body__blochead {
+body .sectionhead {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,17 +58,16 @@
   background-color: #f2f2f2;
   height: 330px;
 }
-.body__blochead__title {
+body .sectionhead h2 {
   font-size: 30px;
-  font-style: bold;
   width: 80%;
   padding-top: 40px;
 }
-.body__blochead__text {
+body .sectionhead__text {
   font-size: 20px;
   padding-top: 20px;
 }
-.body__blochead__btn {
+body .sectionhead__btn {
   color: white;
   border-radius: 30px;
   margin-top: 35px;
@@ -76,6 +75,181 @@
   background: rgb(255, 121, 218);
   background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   box-shadow: 2px 6px 11px 0px rgba(0, 0, 0, 0.252);
+}
+body .sectionmiddle {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+body .sectionmiddle h2 {
+  font-size: 30px;
+  width: 90%;
+  padding-top: 40px;
+}
+body .sectionmiddle__blocTop {
+  position: relative;
+  display: flex;
+  font-style: bold;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 20px;
+  width: 83%;
+  border-radius: 15px;
+}
+body .sectionmiddle__blocTop .number {
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  left: -10px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  padding: 5px 9px;
+}
+body .sectionmiddle__blocTop #iconMobile {
+  font-size: 20px;
+  position: absolute;
+  margin: 15%;
+  left: -15px;
+  color: #6f6f6f;
+}
+body .sectionmiddle__blocTop p {
+  margin: auto;
+}
+body .sectionmiddle__blocMiddle {
+  position: relative;
+  display: flex;
+  font-style: bold;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 20px;
+  width: 83%;
+  border-radius: 15px;
+}
+body .sectionmiddle__blocMiddle .number {
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  left: -10px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  padding: 5px 9px;
+}
+body .sectionmiddle__blocMiddle .iconMenu {
+  font-size: 18px;
+  position: absolute;
+  margin: 15%;
+  left: -15px;
+  color: #6f6f6f;
+}
+body .sectionmiddle__blocMiddle p {
+  margin: auto;
+}
+body .sectionmiddle__blocBottom {
+  position: relative;
+  display: flex;
+  font-style: bold;
+  align-items: center;
+  background-color: #f2f2f2;
+  margin-top: 20px;
+  padding: 20px;
+  width: 83%;
+  border-radius: 15px;
+}
+body .sectionmiddle__blocBottom .number {
+  font-size: 12px;
+  color: white;
+  position: absolute;
+  left: -10px;
+  border-radius: 50%;
+  background-color: #9356DC;
+  padding: 5px 9px;
+}
+body .sectionmiddle__blocBottom #iconStore {
+  font-size: 20px;
+  position: absolute;
+  margin: 15%;
+  left: -15px;
+  color: #6f6f6f;
+}
+body .sectionmiddle__blocBottom p {
+  margin: auto;
+}
+body .sectionbottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  background-color: #f2f2f2;
+  height: 500px;
+}
+body .sectionbottom h2 {
+  font-size: 30px;
+  width: 90%;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+body .sectionbottom__firstcard {
+  background-color: white;
+  height: 300px;
+  width: 90%;
+  border-radius: 15px;
+}
+body .sectionbottom__firstcard .image {
+  position: relative;
+  height: 200px;
+  background-image: url("../../assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+  background-size: 115%;
+  background-position: bottom -60px right -20px;
+  border-radius: 15px 15px 0px 0px;
+}
+body .sectionbottom__firstcard .image span {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: green;
+  background-color: rgb(154, 255, 154);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+body .sectionbottom__firstcard h3 {
+  margin: 20px 0px 0px 15px;
+}
+body .sectionbottom__firstcard p {
+  margin: 5px 0px 20px 15px;
+  font-size: 18px;
+}
+body .sectionbottom__secondcard {
+  margin-top: 20px;
+  background-color: white;
+  height: 290px;
+  width: 90%;
+  border-radius: 15px;
+}
+body .sectionbottom__secondcard .image {
+  position: relative;
+  height: 200px;
+  background-image: url("../../assets/images/stil-u2Lp8tXIcjw-unsplash.jpg");
+  background-size: 115%;
+  background-position: bottom -130px right -20px;
+  border-radius: 15px 15px 0px 0px;
+}
+body .sectionbottom__secondcard .image span {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  color: green;
+  background-color: rgb(154, 255, 154);
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+body .sectionbottom__secondcard h3 {
+  margin: 20px 0px 0px 15px;
+}
+body .sectionbottom__secondcard p {
+  margin: 5px 0px 20px 15px;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */
