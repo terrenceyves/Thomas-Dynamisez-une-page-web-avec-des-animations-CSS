@@ -50,223 +50,329 @@
     }
 }
 
-body {
-    .sectionhead {
+
+.sectionhead {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    background-color: $background-colour-secondary;
+    height: 330px;
+    
+    h2 {
+        font-size: 30px;
+        width: 80%;
+        padding-top: 40px;
+    }
+
+    &__text {
+        font-size: 20px;
+        padding-top: 20px;
+    }
+
+    &__btn {
+        color: white;
+        border-radius: 30px;
+        margin-top: 35px;
+        padding:  15px 20px 15px 20px;
+        background: rgb(255,121,218);
+        background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+        box-shadow: 2px 6px 11px 0px rgba(0, 0, 0, 0.252) ;
+
+    }
+}
+.sectionmiddle {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    h2 {
+        font-size: 30px;
+        width: 90%;
+        padding-top: 40px;
+    }
+    &__blocTop {
+        position: relative;
         display: flex;
-        flex-direction: column;
+        font-style: bold;
         align-items: center;
-        text-align: center;
         background-color: $background-colour-secondary;
-        height: 330px;
+        margin-top: 20px;
+        padding: 20px;
+        width: 83%;
+        border-radius: 15px;
         
-        h2 {
-            font-size: 30px;
-            width: 80%;
-            padding-top: 40px;
-        }
-
-        &__text {
-            font-size: 20px;
-            padding-top: 20px;
-        }
-
-        &__btn {
+        .number {
+            font-size: 12px;
             color: white;
-            border-radius: 30px;
-            margin-top: 35px;
-            padding:  15px 20px 15px 20px;
-            background: rgb(255,121,218);
-            background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
-            box-shadow: 2px 6px 11px 0px rgba(0, 0, 0, 0.252) ;
+            position: absolute;
+            left: -10px;
+            border-radius: 50%;
+            background-color: $colour-primary;
+            padding: 5px 9px;
+        }
+        #iconMobile{
+            font-size: 20px;
+            position: absolute;
+            margin: 15%;
+            left: -15px;
 
+            color:#6f6f6f;
+        }
+        p {
+            margin: auto;
         }
     }
-    .sectionmiddle {
+    &__blocMiddle {
+        position: relative;
         display: flex;
-        flex-direction: column;
+        font-style: bold;
         align-items: center;
-
-        h2 {
-            font-size: 30px;
-            width: 90%;
-            padding-top: 40px;
-        }
-        &__blocTop {
-            position: relative;
-            display: flex;
-            font-style: bold;
-            align-items: center;
-            background-color: $background-colour-secondary;
-            margin-top: 20px;
-            padding: 20px;
-            width: 83%;
-            border-radius: 15px;
-            
-            .number {
-                font-size: 12px;
-                color: white;
-                position: absolute;
-                left: -10px;
-                border-radius: 50%;
-                background-color: $colour-primary;
-                padding: 5px 9px;
-            }
-            #iconMobile{
-                font-size: 20px;
-                position: absolute;
-                margin: 15%;
-                left: -15px;
-
-                color:#6f6f6f;
-            }
-            p {
-                margin: auto;
-            }
-        }
-        &__blocMiddle {
-            position: relative;
-            display: flex;
-            font-style: bold;
-            align-items: center;
-            background-color: $background-colour-secondary;
-            margin-top: 20px;
-            padding: 20px;
-            width: 83%;
-            border-radius: 15px;
-            
-            .number {
-                font-size: 12px;
-                color: white;
-                position: absolute;
-                left: -10px;
-                border-radius: 50%;
-                background-color: $colour-primary;
-                padding: 5px 9px;
-            }
-            .iconMenu {         font-size: 18px;
-                position: absolute;
-                margin: 15%;
-                left: -15px;
-
-                color:#6f6f6f;
-
-            }
-            p {
-                margin: auto;
-            }
-        }
-        &__blocBottom {
-            position: relative;
-            display: flex;
-            font-style: bold;
-            align-items: center;
-            background-color: $background-colour-secondary;
-            margin-top: 20px;
-            padding: 20px;
-            width: 83%;
-            border-radius: 15px;
-            
-            .number {
-                font-size: 12px;
-                color: white;
-                position: absolute;
-                left: -10px;
-                border-radius: 50%;
-                background-color: $colour-primary;
-                padding: 5px 9px;
-            }
-            #iconStore{
-                font-size: 20px;
-
-                position: absolute;
-                margin: 15%;
-                left: -15px;
-
-                color:#6f6f6f;
-            }
-            p {
-                margin: auto;
-            }
-        }
-        
-    }
-    .sectionbottom {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-top: 50px;
         background-color: $background-colour-secondary;
-        height: 500px;
-        h2 {
+        margin-top: 20px;
+        padding: 20px;
+        width: 83%;
+        border-radius: 15px;
+        
+        .number {
+            font-size: 12px;
+            color: white;
+            position: absolute;
+            left: -10px;
+            border-radius: 50%;
+            background-color: $colour-primary;
+            padding: 5px 9px;
+        }
+        .iconMenu {         font-size: 18px;
+            position: absolute;
+            margin: 15%;
+            left: -15px;
+
+            color:#6f6f6f;
+
+        }
+        p {
+            margin: auto;
+        }
+    }
+    &__blocBottom {
+        position: relative;
+        display: flex;
+        font-style: bold;
+        align-items: center;
+        background-color: $background-colour-secondary;
+        margin-top: 20px;
+        padding: 20px;
+        width: 83%;
+        border-radius: 15px;
+        
+        .number {
+            font-size: 12px;
+            color: white;
+            position: absolute;
+            left: -10px;
+            border-radius: 50%;
+            background-color: $colour-primary;
+            padding: 5px 9px;
+        }
+        #iconStore{
+            font-size: 20px;
+
+            position: absolute;
+            margin: 15%;
+            left: -15px;
+
+            color:#6f6f6f;
+        }
+        p {
+            margin: auto;
+        }
+    }
+    
+}
+.sectionbottom {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 50px;
+    background-color: $background-colour-secondary;
+    height: 1430px;
+    h2 {
+        font-size: 30px;
+        width: 90%;
+        padding-top: 40px;
+        margin-bottom: 20px;
+    }
+    &__firstcard {
+        position: relative;
+        background-color: white;
+        height: 300px;
+        width: 90%;
+        border-radius: 15px;
+
+        .image {
+            position: relative;
+            height: 200px;
+            background-image: url("../../assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
+            background-size: 115%;
+            background-position: bottom -60px right -20px;
+            border-radius: 15px 15px 0px 0px;
+            span {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                color: green;
+                background-color: rgb(154, 255, 154);
+                padding: 5px 10px;
+                border-radius: 5px;
+            }
+        }
+        h3 {
+            margin: 20px 0px 0px 15px;
+        }
+        p {
+            margin: 5px 0px 20px 15px;
+            font-size: 18px;
+        }
+        i {
+            position: absolute;
+            right: 30px;
+            bottom: 35px;
             font-size: 30px;
-            width: 90%;
-            padding-top: 40px;
-            margin-bottom: 20px;
         }
-        &__firstcard {
-            background-color: white;
-            height: 300px;
-            width: 90%;
-            border-radius: 15px;
 
-            .image {
-                position: relative;
-                height: 200px;
-                background-image: url("../../assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
-                background-size: 115%;
-                background-position: bottom -60px right -20px;
-                border-radius: 15px 15px 0px 0px;
-                span {
-                    position: absolute;
-                    right: 15px;
-                    top: 15px;
-                    color: green;
-                    background-color: rgb(154, 255, 154);
-                    padding: 5px 10px;
-                    border-radius: 5px;
-                }
-            }
-            h3 {
-                margin: 20px 0px 0px 15px;
-            }
-            p {
-                margin: 5px 0px 20px 15px;
-                font-size: 18px;
-            }
-      
-        }
-        &__secondcard {
-            margin-top: 20px;
-            background-color: white;
-            height: 290px;
-            width: 90%;
-            border-radius: 15px;
+    }
+    &__secondcard {
+        position: relative;
+        margin-top: 20px;
+        background-color: white;
+        height: 300px;
+        width: 90%;
+        border-radius: 15px;
 
-            .image {
-                position: relative;
-                height: 200px;
-                background-image: url("../../assets/images/stil-u2Lp8tXIcjw-unsplash.jpg");
-                background-size: 115%;
-                background-position: bottom -130px right -20px;
-                border-radius: 15px 15px 0px 0px;
-                span {
-                    position: absolute;
-                    right: 15px;
-                    top: 15px;
-                    color: green;
-                    background-color: rgb(154, 255, 154);
-                    padding: 5px 10px;
-                    border-radius: 5px;
-                }
+        .image {
+            position: relative;
+            height: 200px;
+            background-image: url("../../assets/images/stil-u2Lp8tXIcjw-unsplash.jpg");
+            background-size: 115%;
+            background-position: bottom -130px right -20px;
+            border-radius: 15px 15px 0px 0px;
+            span {
+                position: absolute;
+                right: 15px;
+                top: 15px;
+                color: green;
+                background-color: rgb(154, 255, 154);
+                padding: 5px 10px;
+                border-radius: 5px;
             }
-            h3 {
-                margin: 20px 0px 0px 15px;
-            }
-            p {
-                margin: 5px 0px 20px 15px;font-size: 18px;
-            }
-      
         }
-    }    
+        h3 {
+            margin: 20px 0px 0px 15px;
+        }
+        p {
+            margin: 5px 0px 20px 15px;font-size: 18px;
+        }
+        .iconheart {
+            position: absolute;
+            right: 30px;
+            bottom: 35px;
+            font-size: 30px;
+            color: $colour-primary
+        }
+        .iconpointer {
+            position: absolute;
+            right: 15px;
+            bottom: 15px;
+            font-size: 35px;
+        }
+    
+    }
+    &__thirdcard {
+        position: relative;
+        margin-top: 20px;
+
+        background-color: white;
+        height: 300px;
+        width: 90%;
+        border-radius: 15px;
+
+        .image {
+            position: relative;
+            height: 200px;
+            background-image: url("../../assets/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+            background-size: 115%;
+            background-position: bottom -60px right -20px;
+            border-radius: 15px 15px 0px 0px;
+        }
+        h3 {
+            margin: 20px 0px 0px 15px;
+        }
+        p {
+            margin: 5px 0px 20px 15px;
+            font-size: 18px;
+        }
+        i {
+            position: absolute;
+            right: 30px;
+            bottom: 35px;
+            font-size: 30px;
+        }
+
+    }
+    &__fourthcard {
+        position: relative;
+        margin-top: 20px;
+
+        background-color: white;
+        height: 300px;
+        width: 90%;
+        border-radius: 15px;
+
+        .image {
+            position: relative;
+            height: 200px;
+            background-image: url("../../assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+            background-size: 115%;
+            background-position: bottom -60px right -20px;
+            border-radius: 15px 15px 0px 0px;
+        }
+        h3 {
+            margin: 20px 0px 0px 15px;
+        }
+        p {
+            margin: 5px 0px 20px 15px;
+            font-size: 18px;
+        }
+        i {
+            position: absolute;
+            right: 30px;
+            bottom: 35px;
+            font-size: 30px;
+        }
+
+    }
+    
+}    
+
+footer {
+    background-color: rgb(56, 56, 56);
+    height: 230px;
+    color: white;
+
+    #title {
+        font-family: "Shrikhand-Regular";
+        font-size: 23px;
+        padding: 30px 0px 20px 35px;
+    }
+    p {
+        padding-left: 35px;
+        margin-top: 5px;
+        font-size: 18px;
+        i{
+            margin-right: 10px;
+        }
+    }
 
 }
+

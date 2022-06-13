@@ -50,7 +50,7 @@
   left: 40px;
 }
 
-body .sectionhead {
+.sectionhead {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -58,16 +58,16 @@ body .sectionhead {
   background-color: #f2f2f2;
   height: 330px;
 }
-body .sectionhead h2 {
+.sectionhead h2 {
   font-size: 30px;
   width: 80%;
   padding-top: 40px;
 }
-body .sectionhead__text {
+.sectionhead__text {
   font-size: 20px;
   padding-top: 20px;
 }
-body .sectionhead__btn {
+.sectionhead__btn {
   color: white;
   border-radius: 30px;
   margin-top: 35px;
@@ -76,17 +76,18 @@ body .sectionhead__btn {
   background: linear-gradient(180deg, rgb(255, 121, 218) 0%, rgb(147, 86, 220) 100%);
   box-shadow: 2px 6px 11px 0px rgba(0, 0, 0, 0.252);
 }
-body .sectionmiddle {
+
+.sectionmiddle {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-body .sectionmiddle h2 {
+.sectionmiddle h2 {
   font-size: 30px;
   width: 90%;
   padding-top: 40px;
 }
-body .sectionmiddle__blocTop {
+.sectionmiddle__blocTop {
   position: relative;
   display: flex;
   font-style: bold;
@@ -97,7 +98,7 @@ body .sectionmiddle__blocTop {
   width: 83%;
   border-radius: 15px;
 }
-body .sectionmiddle__blocTop .number {
+.sectionmiddle__blocTop .number {
   font-size: 12px;
   color: white;
   position: absolute;
@@ -106,17 +107,17 @@ body .sectionmiddle__blocTop .number {
   background-color: #9356DC;
   padding: 5px 9px;
 }
-body .sectionmiddle__blocTop #iconMobile {
+.sectionmiddle__blocTop #iconMobile {
   font-size: 20px;
   position: absolute;
   margin: 15%;
   left: -15px;
   color: #6f6f6f;
 }
-body .sectionmiddle__blocTop p {
+.sectionmiddle__blocTop p {
   margin: auto;
 }
-body .sectionmiddle__blocMiddle {
+.sectionmiddle__blocMiddle {
   position: relative;
   display: flex;
   font-style: bold;
@@ -127,7 +128,7 @@ body .sectionmiddle__blocMiddle {
   width: 83%;
   border-radius: 15px;
 }
-body .sectionmiddle__blocMiddle .number {
+.sectionmiddle__blocMiddle .number {
   font-size: 12px;
   color: white;
   position: absolute;
@@ -136,17 +137,17 @@ body .sectionmiddle__blocMiddle .number {
   background-color: #9356DC;
   padding: 5px 9px;
 }
-body .sectionmiddle__blocMiddle .iconMenu {
+.sectionmiddle__blocMiddle .iconMenu {
   font-size: 18px;
   position: absolute;
   margin: 15%;
   left: -15px;
   color: #6f6f6f;
 }
-body .sectionmiddle__blocMiddle p {
+.sectionmiddle__blocMiddle p {
   margin: auto;
 }
-body .sectionmiddle__blocBottom {
+.sectionmiddle__blocBottom {
   position: relative;
   display: flex;
   font-style: bold;
@@ -157,7 +158,7 @@ body .sectionmiddle__blocBottom {
   width: 83%;
   border-radius: 15px;
 }
-body .sectionmiddle__blocBottom .number {
+.sectionmiddle__blocBottom .number {
   font-size: 12px;
   color: white;
   position: absolute;
@@ -166,37 +167,39 @@ body .sectionmiddle__blocBottom .number {
   background-color: #9356DC;
   padding: 5px 9px;
 }
-body .sectionmiddle__blocBottom #iconStore {
+.sectionmiddle__blocBottom #iconStore {
   font-size: 20px;
   position: absolute;
   margin: 15%;
   left: -15px;
   color: #6f6f6f;
 }
-body .sectionmiddle__blocBottom p {
+.sectionmiddle__blocBottom p {
   margin: auto;
 }
-body .sectionbottom {
+
+.sectionbottom {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin-top: 50px;
   background-color: #f2f2f2;
-  height: 500px;
+  height: 1430px;
 }
-body .sectionbottom h2 {
+.sectionbottom h2 {
   font-size: 30px;
   width: 90%;
   padding-top: 40px;
   margin-bottom: 20px;
 }
-body .sectionbottom__firstcard {
+.sectionbottom__firstcard {
+  position: relative;
   background-color: white;
   height: 300px;
   width: 90%;
   border-radius: 15px;
 }
-body .sectionbottom__firstcard .image {
+.sectionbottom__firstcard .image {
   position: relative;
   height: 200px;
   background-image: url("../../assets/images/jay-wennington-N_Y88TWmGwA-unsplash.jpg");
@@ -204,7 +207,7 @@ body .sectionbottom__firstcard .image {
   background-position: bottom -60px right -20px;
   border-radius: 15px 15px 0px 0px;
 }
-body .sectionbottom__firstcard .image span {
+.sectionbottom__firstcard .image span {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -213,21 +216,28 @@ body .sectionbottom__firstcard .image span {
   padding: 5px 10px;
   border-radius: 5px;
 }
-body .sectionbottom__firstcard h3 {
+.sectionbottom__firstcard h3 {
   margin: 20px 0px 0px 15px;
 }
-body .sectionbottom__firstcard p {
+.sectionbottom__firstcard p {
   margin: 5px 0px 20px 15px;
   font-size: 18px;
 }
-body .sectionbottom__secondcard {
+.sectionbottom__firstcard i {
+  position: absolute;
+  right: 30px;
+  bottom: 35px;
+  font-size: 30px;
+}
+.sectionbottom__secondcard {
+  position: relative;
   margin-top: 20px;
   background-color: white;
-  height: 290px;
+  height: 300px;
   width: 90%;
   border-radius: 15px;
 }
-body .sectionbottom__secondcard .image {
+.sectionbottom__secondcard .image {
   position: relative;
   height: 200px;
   background-image: url("../../assets/images/stil-u2Lp8tXIcjw-unsplash.jpg");
@@ -235,7 +245,7 @@ body .sectionbottom__secondcard .image {
   background-position: bottom -130px right -20px;
   border-radius: 15px 15px 0px 0px;
 }
-body .sectionbottom__secondcard .image span {
+.sectionbottom__secondcard .image span {
   position: absolute;
   right: 15px;
   top: 15px;
@@ -244,12 +254,102 @@ body .sectionbottom__secondcard .image span {
   padding: 5px 10px;
   border-radius: 5px;
 }
-body .sectionbottom__secondcard h3 {
+.sectionbottom__secondcard h3 {
   margin: 20px 0px 0px 15px;
 }
-body .sectionbottom__secondcard p {
+.sectionbottom__secondcard p {
   margin: 5px 0px 20px 15px;
   font-size: 18px;
+}
+.sectionbottom__secondcard .iconheart {
+  position: absolute;
+  right: 30px;
+  bottom: 35px;
+  font-size: 30px;
+  color: #9356DC;
+}
+.sectionbottom__secondcard .iconpointer {
+  position: absolute;
+  right: 15px;
+  bottom: 15px;
+  font-size: 35px;
+}
+.sectionbottom__thirdcard {
+  position: relative;
+  margin-top: 20px;
+  background-color: white;
+  height: 300px;
+  width: 90%;
+  border-radius: 15px;
+}
+.sectionbottom__thirdcard .image {
+  position: relative;
+  height: 200px;
+  background-image: url("../../assets/images/toa-heftiba-DQKerTsQwi0-unsplash.jpg");
+  background-size: 115%;
+  background-position: bottom -60px right -20px;
+  border-radius: 15px 15px 0px 0px;
+}
+.sectionbottom__thirdcard h3 {
+  margin: 20px 0px 0px 15px;
+}
+.sectionbottom__thirdcard p {
+  margin: 5px 0px 20px 15px;
+  font-size: 18px;
+}
+.sectionbottom__thirdcard i {
+  position: absolute;
+  right: 30px;
+  bottom: 35px;
+  font-size: 30px;
+}
+.sectionbottom__fourthcard {
+  position: relative;
+  margin-top: 20px;
+  background-color: white;
+  height: 300px;
+  width: 90%;
+  border-radius: 15px;
+}
+.sectionbottom__fourthcard .image {
+  position: relative;
+  height: 200px;
+  background-image: url("../../assets/images/louis-hansel-shotsoflouis-qNBGVyOCY8Q-unsplash.jpg");
+  background-size: 115%;
+  background-position: bottom -60px right -20px;
+  border-radius: 15px 15px 0px 0px;
+}
+.sectionbottom__fourthcard h3 {
+  margin: 20px 0px 0px 15px;
+}
+.sectionbottom__fourthcard p {
+  margin: 5px 0px 20px 15px;
+  font-size: 18px;
+}
+.sectionbottom__fourthcard i {
+  position: absolute;
+  right: 30px;
+  bottom: 35px;
+  font-size: 30px;
+}
+
+footer {
+  background-color: rgb(56, 56, 56);
+  height: 230px;
+  color: white;
+}
+footer #title {
+  font-family: "Shrikhand-Regular";
+  font-size: 23px;
+  padding: 30px 0px 20px 35px;
+}
+footer p {
+  padding-left: 35px;
+  margin-top: 5px;
+  font-size: 18px;
+}
+footer p i {
+  margin-right: 10px;
 }
 
 /*# sourceMappingURL=style.css.map */
