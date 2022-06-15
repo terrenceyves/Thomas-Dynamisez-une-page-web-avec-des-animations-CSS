@@ -10,6 +10,8 @@
   margin: 0px;
   padding: 0px;
   font-family: "Roboto-Regular", sans-serif;
+  text-decoration: none;
+  color: black;
 }
 
 .header {
