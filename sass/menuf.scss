@@ -15,13 +15,22 @@ header {
 
     h1 {
     display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
     background-color: white;
     font-family: "Shrikhand-Regular", sans-serif;
-    font-size: 40px;
+    font-size: 35px;
+    font-weight: normal;
     color: black;
     justify-content: center;
     padding: 20px 0px 10px 0px ;
     box-shadow: -1px 4px 5px rgba(0, 0, 0, 0.155);
+    i {
+        position: absolute;
+        left: 15px;
+        font-size: 27px;
+    }
     }
     .imageHeader {
         height: 300px;
@@ -30,24 +39,114 @@ header {
     }
 }
 
-main {
-    position: relative;
-    background-color: $background-colour-primary;
-}
+// main {
+//     position: relative;
+//     background-color: $background-colour-primary;
+//     height: 50px;
+// }
 
-.sectionhead {
-    position: absolute;
-    background-color: $background-colour-primary;
-    height: 500px;
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: $background-colour-secondary;
+    height: 1260px;
     width: 100%;
     top: -60px;
     border-radius: 50px 50px 0px 0px ;
 
     h2 {
+        width: 85%;
         display: flex;
         font-family:"Shrikhand-Regular", sans-serif;
+        font-size: 28px;
         font-weight : normal;
-        margin: 30px 20px 0px 20px;
+        margin: 0px 20px 0px 20px;
+        padding-top: 30px;
         justify-content: space-between;
+
     }
+
+    section {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 95%;
+
+        .title {
+            margin: 20px 0px 25px 0px;  
+            width: 90%;
+            color: rgb(85, 85, 85);
+            span {
+                padding-bottom: 5px;
+                color: rgb(85, 85, 85);
+                border-bottom: solid;
+                border-color: $colour-tertiary;
+            }
+        }
+        .plats {
+            background-color: white;
+            border-radius: 15px;
+            width: 88%;
+            padding: 13px;
+            box-shadow: 2px 6px 20px 0px rgba(0, 0, 0, 0.101);
+            margin-bottom: 20px;
+            p {
+                margin-top: 5px;
+                display: flex;
+                justify-content: space-between;
+                
+                span {
+                    margin-right: 5px;
+                    font-weight: bold;
+                }
+            }
+        }
+    }
+    .btn {
+        display: flex;
+        justify-content: center;
+        color: white;
+        border-radius: 30px;
+        margin-top: 35px;
+        padding:  15px 20px 15px 20px;
+        background: rgb(255,121,218);
+        background: linear-gradient(180deg, rgba(255,121,218,1) 0%, rgba(147,86,220,1) 100%);
+        box-shadow: 2px 6px 11px 0px rgba(0, 0, 0, 0.252) ;
+        width: 40%;
+
+    }    
+}
+footer {
+    background-color: rgb(56, 56, 56);
+    height: 200px;
+    color: white;
+    margin-top: -60px;
+
+    #title {
+        font-family: "Shrikhand-Regular";
+        font-size: 18px;
+        padding: 30px 0px 10px 25px;
+        color: white;
+
+
+
+    }
+    p {
+        padding-left: 25px;
+        margin-top: 5px;
+        font-size: 15px;
+        color: white;
+
+
+
+        i{
+            margin-right: 10px;
+            color: white;
+
+        }
+    }
+
 }

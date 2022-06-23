@@ -344,14 +344,17 @@ footer #title {
   font-family: "Shrikhand-Regular";
   font-size: 23px;
   padding: 30px 0px 20px 35px;
+  color: white;
 }
 footer p {
   padding-left: 35px;
   margin-top: 5px;
   font-size: 18px;
+  color: white;
 }
 footer p i {
   margin-right: 10px;
+  color: white;
 }
 
 /*# sourceMappingURL=style.css.map */
